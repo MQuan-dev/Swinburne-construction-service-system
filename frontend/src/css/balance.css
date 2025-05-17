@@ -1,0 +1,146 @@
+/* Balance Component Styles */
+.balance-container {
+    padding: 1rem;
+  }
+  
+  .balance-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .balance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .balance-header h3 {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .balance-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .balance-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .balance-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .balance-btn.deposit {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .balance-btn.deposit:hover {
+    background-color: #c0392b;
+  }
+  
+  .balance-btn.withdraw {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .balance-btn.withdraw:hover {
+    background-color: #e9ecef;
+  }
+  
+  .transaction-history {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .transaction-history h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .transaction-list {
+    margin-top: 1rem;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .transaction-item:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  
+  .transaction-icon.deposit {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+  }
+  
+  .transaction-icon.payment {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+  }
+  
+  .transaction-icon.refund {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+  }
+  
+  .transaction-details {
+    flex: 1;
+  }
+  
+  .transaction-title {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .transaction-date {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .transaction-amount {
+    font-weight: 600;
+  }
+  
+  .transaction-amount.deposit,
+  .transaction-amount.refund {
+    color: #2ecc71;
+  }
+  
+  .transaction-amount.payment {
+    color: #e74c3c;
+  }
+  

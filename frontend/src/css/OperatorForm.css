@@ -1,0 +1,336 @@
+/* Main container */
+.operator-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Card */
+.operator-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+  overflow: hidden;
+}
+
+.card-content-form {
+  padding: 2rem !important;
+}
+
+/* Form header */
+.form-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.operator-form-title {
+  color: #1976d2;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.title-icon {
+  font-size: 2rem !important;
+  color: #1976d2;
+}
+
+/* Error message */
+.error-container {
+  margin-bottom: 1.5rem;
+}
+
+.operator-error {
+  border-radius: 8px !important;
+  display: flex;
+  align-items: center;
+}
+
+.error-icon {
+  font-size: 1.25rem !important;
+}
+
+/* Form */
+.operator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form inputs */
+.operator-form-input {
+  margin-bottom: 0.5rem !important;
+}
+
+.operator-form-input .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.operator-form-input .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}
+
+.operator-form-input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.input-icon {
+  color: #757575;
+}
+
+.password-toggle {
+  color: #757575 !important;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Submit button */
+.operator-submit-btn {
+  padding: 0.75rem !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  background: linear-gradient(45deg, #1976d2, #64b5f6) !important;
+  box-shadow: 0 4px 10px rgba(25, 118, 210, 0.3) !important;
+}
+
+.operator-submit-btn:hover {
+  background: linear-gradient(45deg, #1565c0, #42a5f5) !important;
+}
+
+.loading-spinner {
+  color: white !important;
+}
+
+/* Back button */
+.operator-back-btn {
+  padding: 0.75rem !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #616161 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.operator-back-btn:hover {
+  background-color: #f5f5f5 !important;
+  border-color: #bdbdbd !important;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .operator-form-container {
+    padding: 1.5rem;
+  }
+
+  .card-content-form {
+    padding: 1.5rem !important;
+  }
+
+  .operator-form-title {
+    font-size: 1.5rem !important;
+  }
+
+  .title-icon {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* iPhone 14 Pro Max and other modern iPhones */
+@media only screen and (max-width: 430px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .operator-form-container {
+    padding: 0.5rem;
+    min-height: auto;
+    height: auto;
+    align-items: flex-start;
+    overflow-y: visible;
+    position: static;
+    margin-bottom: 2rem;
+    max-width: 370px;
+  }
+
+  .operator-card {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    margin: 0;
+    width: 100%;
+    position: static;
+  }
+
+  .card-content-form {
+    padding: 1rem !important;
+    overflow: visible;
+  }
+
+  .form-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .operator-form-title {
+    font-size: 1.25rem !important;
+    gap: 0.5rem;
+  }
+
+  .title-icon {
+    font-size: 1.25rem !important;
+  }
+
+  .error-container {
+    margin-bottom: 0.75rem;
+  }
+
+  .operator-error {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .error-icon {
+    font-size: 1rem !important;
+  }
+
+  .operator-form {
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  /* Form inputs for mobile */
+  .operator-form-input {
+    margin-bottom: 0.25rem !important;
+    width: 300px !important;
+  }
+
+  .operator-form-input .MuiInputBase-input {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+    padding: 0.75rem !important;
+  }
+
+  .operator-form-input .MuiInputLabel-root {
+    font-size: 0.875rem !important;
+  }
+
+  .input-icon {
+    font-size: 1.125rem !important;
+  }
+
+  .password-toggle {
+    padding: 0.5rem !important;
+  }
+
+  /* Button container */
+  .button-container {
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Submit button */
+  .operator-submit-btn {
+    padding: 0.625rem !important;
+    font-size: 0.9375rem !important;
+    min-height: 44px; /* Better touch target */
+    width: 300px !important;
+  }
+
+  /* Back button */
+  .operator-back-btn {
+    padding: 0.625rem !important;
+    font-size: 0.9375rem !important;
+    min-height: 44px; /* Better touch target */
+    width: 300px !important;
+  }
+}
+
+/* Fix for landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .operator-form-container {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .operator-card {
+    margin: 0;
+  }
+
+  .card-content-form {
+    padding: 0.75rem !important;
+  }
+
+  .form-header {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .operator-form-title {
+    font-size: 1.125rem !important;
+  }
+
+  .title-icon {
+    font-size: 1.125rem !important;
+  }
+
+  .operator-form {
+    gap: 0.5rem;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .button-container > div {
+    flex: 1;
+  }
+}
+
+/* Additional fixes for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  .operator-form-container {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+
+  body,
+  html {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+  }
+
+  /* Fix for iOS Safari bottom padding */
+  .operator-card {
+    margin-bottom: 2rem;
+  }
+}
+

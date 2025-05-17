@@ -1,0 +1,511 @@
+.category-container {
+  padding: 20px;
+  
+}
+
+.h2-category-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.category-avatar {
+  width: 60px !important;
+  height: 60px !important;
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  background-color: #4caf50 !important; /* Xanh lá */
+  color: white !important;
+  text-transform: none; /* Không in hoa */
+}
+
+.delete-btn {
+  background-color: #f44336 !important; /* Đỏ */
+  color: white !important;
+  text-transform: none; /* Không in hoa */
+}
+
+.edit-btn:hover {
+  background-color: black !important; /* Xanh lá đậm hơn */
+}
+
+.delete-btn:hover {
+  background-color: black !important; /* Đỏ đậm hơn */
+}
+
+.category-grid-container{
+  margin-left: 50px;
+}
+.grid-container{
+  width: 300px !important;
+}
+
+.category-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.category-grid-container {
+  margin-top: 1rem;
+  
+}
+
+/* These styles will be applied in addition to the inline styles */
+.category-avatar {
+  border: 3px solid #fff;
+}
+
+/* Add some responsive adjustments */
+@media (max-width: 600px) {
+  .category-container {
+    padding: 1rem;
+  }
+}
+
+
+/* Main container styles */
+.category-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Title styles */
+.category-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+/* Grid container */
+.category-grid-container {
+  margin-top: 1rem;
+}
+
+.category-list-grid-container{
+  margin-left: 14px;
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* Empty state container */
+.empty-container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles */
+.category-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #db3434, #b92929);;
+}
+
+/* Card content */
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar container */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Category avatar */
+.category-avatar {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid #fff;
+}
+
+/* Category name */
+.category-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Category description */
+.category-description {
+  margin-bottom: 1rem;
+}
+
+/* Category chip */
+.category-chip {
+  background-color: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+  font-weight: 500;
+  margin-bottom: 1rem; 
+  margin-top: 6px;
+}
+
+/* Card actions */
+.card-actions {
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+/* Button styles */
+.edit-button,
+.delete-button {
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+/* Skeleton styles */
+.skeleton-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+
+.skeleton-avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skeleton-title {
+  margin-bottom: 0.5rem;
+}
+
+.skeleton-text {
+  margin-bottom: 0.5rem;
+}
+
+.skeleton-chip {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skeleton-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .grid-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid-container {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-container {
+    width: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-container {
+    padding: 1rem;
+  }
+
+  .category-title {
+    font-size: 1.75rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .category-card {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+
+  .category-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-name {
+    font-size: 1.1rem !important;
+  }
+
+  .category-description {
+    font-size: 0.875rem !important;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* iPhone 14 Pro Max and other modern iPhones */
+@media only screen and (max-width: 430px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .category-container {
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+
+  .category-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .category-grid-container {
+    margin-top: 0.5rem;
+    margin-left: 2px;
+    
+    
+  }
+
+  .grid-container {
+    padding: 0.25rem;
+  }
+
+  .category-card {
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .category-card::before {
+    height: 3px;
+  }
+
+  .avatar-container {
+    margin-bottom: 1rem;
+  }
+
+  .category-avatar {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+  }
+
+  .category-name {
+    font-size: 1rem !important;
+    margin-bottom: 0.25rem;
+  }
+
+  .category-description {
+    font-size: 0.8125rem !important;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    max-height: 2.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .category-chip {
+    font-size: 0.75rem !important;
+    height: 24px !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-actions {
+    gap: 0.5rem;
+    padding: 0.5rem !important;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 0.8125rem !important;
+    padding: 0.375rem 0.75rem !important;
+    min-height: 36px;
+  }
+
+  .edit-button .MuiButton-startIcon,
+  .delete-button .MuiButton-startIcon {
+    margin-right: 4px !important;
+  }
+
+  .edit-button .MuiSvgIcon-root,
+  .delete-button .MuiSvgIcon-root {
+    font-size: 1rem !important;
+  }
+
+  /* Skeleton adjustments */
+  .skeleton-card {
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .skeleton-avatar-container .MuiSkeleton-circular {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .skeleton-title {
+    height: 24px !important;
+  }
+
+  .skeleton-text {
+    height: 16px !important;
+  }
+
+  .skeleton-chip {
+    height: 16px !important;
+  }
+
+  .skeleton-actions .MuiSkeleton-rounded {
+    height: 32px !important;
+    width: 50px !important;
+  }
+
+  /* Empty state */
+  .empty-container {
+    padding: 1.5rem;
+    font-size: 0.875rem !important;
+  }
+
+  /* Error message */
+  .error-message {
+    padding: 1rem;
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Fix for landscape mode on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .category-container {
+    padding: 0.5rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .grid-container {
+    width: 50%;
+  }
+
+  .category-card {
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .avatar-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .category-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .category-name {
+    font-size: 0.875rem !important;
+    margin-bottom: 0.25rem;
+  }
+
+  .category-description {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.5rem;
+    max-height: 2.4em;
+  }
+
+  .category-chip {
+    margin-bottom: 0.5rem;
+    height: 20px !important;
+    font-size: 0.6875rem !important;
+  }
+
+  .card-actions {
+    padding: 0.25rem !important;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+    min-height: 32px;
+  }
+}
+
+/* Original styles from CategoryList.css that might be needed */
+.h2-category-list {
+  margin-bottom: 20px;
+}
+
+

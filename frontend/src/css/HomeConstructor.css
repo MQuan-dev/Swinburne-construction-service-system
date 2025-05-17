@@ -1,0 +1,177 @@
+.home-constructor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.request-list {
+  list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.category {
+  font-weight: bold;
+  padding: 1px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.category-material {
+  color: rgb(0, 14, 216);
+}
+
+.category-service {
+  color: rgb(231, 0, 0);
+}
+.loading, .error-message, .no-requests {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: #d32f2f;
+}
+.service-img{
+  width: 100%;
+  height: 200px;
+}
+
+.toggle-orders-btn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.toggle-orders-btn:hover {
+  color: red;
+  text-decoration: underline;
+  background-color: white;
+}
+/* Quotation Form Styles */
+.quotation-form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-form-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-form-btn:hover {
+  background-color: #0056b3;
+}
+
+.quotation-form {
+  margin-top: 20px;
+}
+
+.quotation-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.quotation-form textarea,
+.quotation-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.quotation-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.quotation-form input[type="file"] {
+  padding: 8px;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+/* Style for the filter container */
+.filter-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style for the select dropdown */
+.filter-container select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+/* Change the border color when the select is focused */
+.filter-container select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Style for the options */
+.filter-container option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Style for the dropdown menu when open */
+.filter-container select:hover {
+  background-color: #f9f9f9;
+}

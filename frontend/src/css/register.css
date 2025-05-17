@@ -1,0 +1,76 @@
+/* 🌟 Căn giữa toàn bộ trang */
+body, html {
+    height: 100%;
+  
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  /* 🌟 Container tổng thể */
+  .register-container {
+    max-width: 450px;
+    width: 90%;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* 🌟 Form chính */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* 🌟 Input fields */
+  .text-field-register {
+    width: 100%;
+    width: 400px;
+  }
+  
+  /* 🌟 Focus effect */
+  .text-field-register:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* 🌟 Thông báo lỗi & thành công */
+  .error-message, .success-message {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    width: 370px;
+  }
+  
+  /* 🌟 Nút đăng ký */
+  .register-button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  /* 🌟 Đăng ký */
+  .redirect-text {
+    text-align: center;
+    padding-top: 11px;
+    
+  }
+  
+  .redirect-link {
+    text-decoration: none;
+    color: #1976d2;
+  }
+  
+  .redirect-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,438 @@
+/* Base styles */
+.home-container {
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+/* Table styling */
+.MuiTableContainer-root {
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 8px;
+  box-shadow: none !important;
+  margin-bottom: 24px;
+  background-color: white;
+}
+
+.MuiTable-root {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Table header styling */
+.MuiTableHead-root .MuiTableRow-root {
+  background-color: #f5f5f5;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 2px solid rgba(224, 224, 224, 1);
+}
+
+/* Table body styling */
+.MuiTableBody-root .MuiTableRow-root {
+  transition: background-color 0.2s ease;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.MuiTableBody-root .MuiTableCell-root {
+  padding: 16px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+/* Status styling */
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #fff8e1;
+  color: #f57c00;
+}
+
+.status-in_progress {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-completed {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.status-constructor_selected {
+  background-color: #fff8e1;
+  color: #f57c00;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+/* Button styling */
+.view-contracts {
+  font-size: 0.875rem !important;
+  padding: 6px 16px !important;
+}
+
+.confirm-contract {
+  font-size: 0.875rem !important;
+  padding: 6px 16px !important;
+  margin-right: 8px !important;
+}
+
+/* Loading and empty states */
+.MuiTableBody-root .MuiCircularProgress-root {
+  margin: 24px 0;
+}
+
+.empty-message {
+  padding: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Action buttons */
+.action-button {
+  white-space: nowrap;
+  margin: 4px 0;
+}
+
+/* Operator Dashboard title */
+.operator-dashboard-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Add these styles for the contract dialog */
+/* Contract dialog styles */
+.MuiDialog-paper {
+  overflow: visible !important;
+}
+
+/* Contract card styles */
+.contract-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contract-card-header {
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contract-card-content {
+  flex-grow: 1;
+}
+
+.contract-info-row {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.contract-info-label {
+  width: 100px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contract-info-value {
+  flex: 1;
+}
+
+.contract-info-value.approved {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.contract-view-button {
+  margin-top: auto;
+  padding: 10px 0;
+}
+
+/* Dialog title */
+.contract-dialog-title {
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+/* Dialog actions */
+.contract-dialog-actions {
+  justify-content: center;
+  padding: 16px;
+}
+
+.close-button {
+  min-width: 120px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contract-info-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .contract-info-label {
+    width: 100%;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .contract-card-header {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 8px;
+  }
+
+  /* Make the table scrollable horizontally on mobile */
+  .MuiTableContainer-root {
+    overflow-x: auto;
+  }
+
+  .MuiTable-root {
+    min-width: 650px;
+  }
+
+  /* Adjust cell padding for mobile */
+  .MuiTableCell-root {
+    padding: 12px 8px !important;
+    font-size: 0.875rem !important;
+  }
+
+  /* Make buttons stack on mobile */
+  .action-button {
+    width: 100% !important;
+    margin: 4px 0 !important;
+  }
+
+  /* Adjust title size for mobile */
+  .MuiTypography-h5 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Make the sidebar menu horizontal on mobile */
+  .MuiList-root {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    padding: 0 !important;
+  }
+
+  .MuiListItem-root {
+    width: auto !important;
+    flex: 1 !important;
+  }
+
+  .MuiListItemButton-root {
+    justify-content: center !important;
+    padding: 8px !important;
+  }
+
+  /* Hide icons on mobile to save space */
+  .MuiListItemButton-root .MuiSvgIcon-root {
+    display: none !important;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 0.875rem !important;
+    text-align: center !important;
+  }
+}
+
+/* iPhone 14 Pro Max specific styles (428px width) */
+@media (max-width: 430px) {
+  /* Further reduce padding */
+  .MuiTableCell-root {
+    padding: 8px 4px !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Make avatars smaller */
+  .MuiAvatar-root {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 0.7rem !important;
+    margin-right: 4px !important;
+  }
+
+  /* Optimize buttons for very small screens */
+  .MuiButton-root {
+    padding: 4px 8px !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Simplify the dialog on mobile */
+  .MuiDialog-paper {
+    margin: 0 !important;
+    max-height: 100% !important;
+    border-radius: 0 !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 12px !important;
+  }
+
+  /* Stack grid items in dialog */
+  .MuiGrid-container .MuiGrid-item {
+    padding: 8px !important;
+  }
+
+  .action-button{
+    width: 150px !important;
+  }
+  
+}
+
+/* Fix for Material UI Grid */
+.MuiGrid-container {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+
+
+/* Fix for Framer Motion */
+motion.div {
+  display: block !important;
+}
+
+/* Mobile-first table styles */
+@media (max-width: 768px) {
+  /* Create a card-like view for each row on very small screens */
+  .mobile-card-view .MuiTableCell-root {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    border-bottom: none !important;
+    padding: 8px 16px !important;
+  }
+
+  .mobile-card-view .MuiTableCell-root:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .mobile-card-view .MuiTableRow-root {
+    display: block !important;
+    border-bottom: 1px solid rgba(224, 224, 224, 1) !important;
+    margin-bottom: 16px !important;
+  }
+
+  .mobile-card-view .MuiTableHead-root {
+    display: none !important;
+  }
+}
+
+/* Fix for the sidebar on mobile */
+@media (max-width: 600px) {
+  .MuiCard-root:has(.drawer-header) {
+    margin-bottom: 16px !important;
+  }
+
+  .drawer-header {
+    padding: 12px !important;
+  }
+}
+
+/* Contract dialog specific styles */
+.MuiDialog-paper {
+  max-width: 900px !important;
+  width: 90% !important;
+  margin: 16px !important;
+}
+
+/* Contract card styles */
+.contract-card {
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: none !important;
+}
+
+/* Contract view button */
+.view-contract-btn {
+  background-color: #1976d2 !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  min-width: 140px !important;
+}
+
+/* Close button */
+.close-contract-btn {
+  background-color: #1976d2 !important;
+  color: white !important;
+  border-radius: 4px !important;
+  padding: 8px 24px !important;
+  min-width: 120px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
+/* Contract dialog title */
+.contract-dialog-title {
+  background-color: #1976d2 !important;
+  color: white !important;
+  padding: 16px !important;
+  text-align: center !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+/* Contract info layout */
+.contract-info-row {
+  display: flex !important;
+  margin-bottom: 12px !important;
+}
+
+.contract-info-label {
+  min-width: 80px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.contract-info-value {
+  flex: 1 !important;
+}
+
+.contract-info-value.approved {
+  color: #4caf50 !important;
+  font-weight: 600 !important;
+}
+
+/* Upload date alignment */
+.upload-date-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  margin-bottom: 16px !important;
+}
+
+/* Center buttons */
+.button-container {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 16px !important;
+}
+
