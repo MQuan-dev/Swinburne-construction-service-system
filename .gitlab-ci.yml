@@ -1,0 +1,47 @@
+image: docker:24.0.7
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+build_backend:
+  stage: build
+  script:
+    - echo "Building Backend Image..."
+    - docker build -t $CI_REGISTRY_IMAGE/backend:latest -f backend/Dockerfile ./backend
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE/backend:latest
+
+build_frontend:
+  stage: build
+  script:
+    - echo "Building Frontend Image..."
+    - docker build -t $CI_REGISTRY_IMAGE/frontend:latest -f frontend/dockerfile ./frontend
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE/frontend:latest
+
+deploy:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - "command -v ssh-agent >/dev/null || ( apk add --update openssh )"
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_PRIVATE_KEY" > armbian_pem
+    - echo "${DEPLOY_PRIVATE_KEY}" | head -c 100
+    - chmod 400 armbian_pem
+    - mkdir -p ~/.ssh
+    - ssh-keyscan -p 23 -H tap.sigconn.sbs >> ~/.ssh/known_hosts
+    - ssh -p 23 -i "armbian_pem" root@tap.sigconn.sbs "docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY"
+  script:
+    - ssh -p 23 -i "armbian_pem" root@tap.sigconn.sbs "cd construction-service && docker-compose pull && docker-compose up -d"
+  after_script:
+    - ssh -p 23 -i "armbian_pem" root@tap.sigconn.sbs "docker image prune -f"
+  only:
+    - ticket-1550
+    
