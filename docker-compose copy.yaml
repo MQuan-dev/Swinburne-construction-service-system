@@ -1,0 +1,18 @@
+services:
+  backend:
+    image: registry.gitlab.com/lvminh2k/swinburne-construction-service-system/backend:latest
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      - DATABASE_URL=postgres://postgres:password@postgres:5432/construction
+    ports:
+      - "8000:8000"
+
+  frontend:
+    image: registry.gitlab.com/lvminh2k/swinburne-construction-service-system/frontend:latest
+    restart: unless-stopped
+    env_file:
+      - ./frontend/.env
+    ports:
+      - "3000:80"

@@ -1,0 +1,95 @@
+/* Enhanced main background with professional construction theme */
+.main-background {
+    position: relative;
+    min-height: 80vh;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    overflow: hidden;
+  }
+  
+  /* Abstract shapes representing construction elements */
+  .background-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+    z-index: 0;
+  }
+  
+  .shape-1 {
+    width: 400px;
+    height: 400px;
+    background-color: #007bff;
+    top: -100px;
+    right: -100px;
+  }
+  
+  .shape-2 {
+    width: 300px;
+    height: 300px;
+    background-color: #ffc107;
+    bottom: -50px;
+    left: -50px;
+  }
+  
+  .shape-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #28a745;
+    top: 30%;
+    left: 10%;
+    opacity: 0.03;
+  }
+  
+  .shape-4 {
+    width: 150px;
+    height: 150px;
+    background-color: #dc3545;
+    bottom: 20%;
+    right: 15%;
+    opacity: 0.03;
+  }
+  
+  /* Blueprint-inspired grid pattern */
+  .main-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 123, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 123, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+  }
+  
+  /* Content wrapper to ensure content is above background elements */
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  
+  /* Subtle box shadow for content areas */
+  .content-wrapper > div {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding: 1rem;
+    }
+  
+    .background-shape {
+      opacity: 0.03;
+    }
+  }
+  
+  

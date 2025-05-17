@@ -1,0 +1,94 @@
+/* Mobile Navigation Styles */
+.mobile-nav-container {
+    display: none;
+  }
+  
+  .mobile-nav-toggle {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    left: 0; /* Cách cạnh phải 20px, có thể thay đổi tùy ý */
+    top: 15px; /* Đặt vị trí từ trên xuống */
+    z-index: 1000;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 999;
+    padding: 4rem 1rem 1rem;
+    overflow-y: auto;
+    width: 40%;
+    height:80vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+  }
+  
+  .mobile-nav.open {
+    display: block;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-nav-container {
+      display: block;
+    }
+  
+    .navigation {
+      display: none;
+    }
+  
+    .mobile-nav .navigation {
+      display: block;
+    }
+  }
+  
+  

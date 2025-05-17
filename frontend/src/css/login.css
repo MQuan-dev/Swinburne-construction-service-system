@@ -1,0 +1,133 @@
+/* 🌟 Căn giữa toàn bộ trang */
+.login-container {
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* 🌟 Tiêu đề */
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/* 🌟 Input fields */
+.text-field {
+  width: 100%;
+}
+
+/* 🌟 Focus effect */
+.text-field:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* 🌟 Thông báo lỗi */
+.error-message-login {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+  width: 335px;
+}
+
+/* 🌟 Nút đăng nhập */
+.login-button {
+  width: 100%;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* 🌟 Đăng ký */
+.redirect-text {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.redirect-link {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+.redirect-link:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Forgot Password Link */
+.forgot-password-link {
+  color: #1976d2 !important;
+  text-transform: none !important;
+  padding: 0 !important;
+  min-width: auto !important;
+  font-weight: normal !important;
+  font-size: inherit !important;
+}
+
+.forgot-password-link:hover {
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+/* 🌟 Reset Password Dialog */
+.MuiDialog-paper {
+  border-radius: 12px !important;
+  padding: 10px !important;
+  width: 90% !important;
+  max-width: 450px !important;
+}
+
+.MuiDialogTitle-root {
+  text-align: center !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.MuiDialogContent-root {
+  padding: 20px !important;
+}
+
+.MuiDialogContent-root .MuiTextField-root {
+  margin-bottom: 15px !important;
+}
+
+.MuiDialogContent-root .MuiAlert-root {
+  margin-top: 15px !important;
+  font-size: 14px !important;
+}
+
+.MuiDialogActions-root {
+  padding: 15px 20px 20px !important;
+  justify-content: center !important;
+}
+
+.MuiDialogActions-root .MuiButton-root {
+  min-width: 100px !important;
+  border-radius: 6px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-size: 0.8rem !important;
+}
+
+.MuiDialogActions-root .MuiButton-root:first-child {
+  color: #666 !important;
+}
+
+.MuiDialogActions-root .MuiButton-root:last-child {
+  background-color: #1976d2 !important;
+  color: white !important;
+}
+
+.MuiDialogActions-root .MuiButton-root:last-child:hover {
+  background-color: #1565c0 !important;
+}
+
